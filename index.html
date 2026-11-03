@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — EchoRoutine</title>
+<meta name="description" content="Privacy policy for the EchoRoutine Android app: what is stored on your phone, the few cases where data leaves it, and how to contact the developer.">
 <style>
   :root {
     color-scheme: light dark;
@@ -32,58 +33,33 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
   }
-  .wrap {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 48px 24px 80px;
-  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
   .eyebrow {
-    font-size: 13px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 700;
-    margin-bottom: 8px;
+    font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700; margin-bottom: 8px;
   }
-  h1 {
-    font-size: 32px;
-    margin: 0 0 4px;
-  }
-  .effective-date {
-    color: var(--text-muted);
-    font-size: 14px;
-    margin-bottom: 32px;
-  }
+  h1 { font-size: 32px; margin: 0 0 4px; }
+  .effective-date { color: var(--text-muted); font-size: 14px; margin-bottom: 32px; }
   h2 {
-    font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 8px;
+    font-size: 20px; margin-top: 40px; margin-bottom: 12px;
+    border-bottom: 1px solid var(--border); padding-bottom: 8px;
   }
+  h3 { font-size: 16px; margin-top: 24px; margin-bottom: 8px; }
   p, li { color: var(--text); }
   ul { padding-left: 22px; }
   li { margin-bottom: 6px; }
   a { color: var(--accent); }
   .summary-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 8px;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px; margin-bottom: 8px;
   }
-  code {
-    background: var(--card);
-    padding: 1px 6px;
-    border-radius: 4px;
-    font-size: 0.9em;
-  }
+  code { background: var(--card); padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--border); }
+  th { color: var(--text-muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; }
   footer {
-    margin-top: 48px;
-    padding-top: 16px;
-    border-top: 1px solid var(--border);
-    color: var(--text-muted);
-    font-size: 13px;
+    margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border);
+    color: var(--text-muted); font-size: 13px;
   }
 </style>
 </head>
@@ -91,67 +67,91 @@
 <div class="wrap">
   <div class="eyebrow">Privacy Policy</div>
   <h1>EchoRoutine</h1>
-  <div class="effective-date">Effective date: 22 July 2026</div>
+  <div class="effective-date">Effective date: 3 November 2026 &middot; replaces the version dated 22 July 2026</div>
 
-  <p>EchoRoutine ("the app") is a voice-guided routine, checklist, and timer app — built for shift workers, but usable by anyone who wants a spoken, hands-free schedule with workout timers and nutrition tracking. This policy explains what data the app handles and how.</p>
+  <p>EchoRoutine ("the app") is a voice-guided routine, checklist and timer app for Android — built for shift workers, but usable by anyone who wants a spoken, hands-free schedule with workout timers and water, food, weight and sleep tracking. It is published by an independent developer (Kevin, <a href="https://github.com/darkskys106">github.com/darkskys106</a>). This policy explains what data the app handles, the few cases where anything leaves your phone, and how to contact the developer.</p>
 
   <h2>Summary</h2>
   <div class="summary-card">
-    <p style="margin:0">EchoRoutine stores all of your data locally on your own device. The developer does not collect, receive, store, or have access to any of it. The app makes two kinds of outside network requests, both described below: a barcode lookup against the public Open Food Facts database, and — only if you choose to set one up — a direct call to an AI provider you've connected with your own API key.</p>
+    <p><strong>Everything you enter is stored on your own device.</strong> The developer does not collect, receive, store or have access to any of it, and there are no accounts, no advertising and no tracking. Data leaves your phone only in the situations listed under <a href="#leaves">"When data leaves your phone"</a>: a barcode lookup you trigger, anonymous diagnostics from Google's barcode-scanning library, an AI request you set up with your own API key, and backups you choose to make.</p>
   </div>
 
   <h2>Data stored on your device</h2>
-  <p>The app stores the following locally, in the app's private storage on your phone:</p>
+  <p>The app keeps the following in its private storage on your phone, where other apps cannot read it:</p>
   <ul>
-    <li>Your routine schedule(s) and profiles (meal, water, workout, and study times you set or edit)</li>
-    <li>Checklist/completion state for routine items</li>
-    <li>Workout timer history (sets, reps, session summaries)</li>
-    <li>Food log entries and any custom foods you add</li>
-    <li>Body-weight log entries</li>
-    <li>Macro/nutrition targets and settings</li>
-    <li>Custom timers you create</li>
+    <li>Your routines and routine profiles (the items, times, types and notes you create or import)</li>
+    <li>Checklist completion state for each day, which also drives the streak and "last 7 days" summaries</li>
+    <li>Workout timer sets and rep records</li>
+    <li>Food log entries, custom foods, nutrition targets and water intake</li>
+    <li>Body-weight entries and sleep ratings</li>
+    <li>Custom timers and your settings (voice, notification, backup and timer preferences)</li>
+    <li>If you connect an AI provider: the API key you entered, stored encrypted using Android's hardware-backed keystore</li>
   </ul>
-  <p>None of this data is transmitted to the developer or to any third party, except where you explicitly use the barcode scanner, the optional AI routine generator, or the app's own export feature — all described below.</p>
+  <p>None of this is transmitted to the developer. It stays on the device until you delete it (see <a href="#choices">"Your choices and deleting data"</a>).</p>
 
-  <h2>Barcode lookup (Open Food Facts)</h2>
-  <p>When you scan a food barcode, the app sends the scanned barcode number to the public <a href="https://world.openfoodfacts.org" target="_blank" rel="noopener">Open Food Facts</a> API to retrieve that product's name and nutrition information. Only the barcode number is sent — no other information about you or your device is included in that request. This happens only when you actively use the scanner and have an internet connection; if it's unavailable, the app falls back to manual entry. Open Food Facts is a third-party, open database not operated by the developer — see their own privacy policy at <a href="https://world.openfoodfacts.org/privacy" target="_blank" rel="noopener">world.openfoodfacts.org/privacy</a>.</p>
+  <h2 id="leaves">When data leaves your phone</h2>
 
-  <h2>Optional AI routine generation (bring your own API key)</h2>
-  <p>EchoRoutine can generate a routine, workout plan, or macro targets for you from a typed or spoken description, in two ways:</p>
+  <h3>1. Barcode lookup (Open Food Facts)</h3>
+  <p>When you scan a food barcode, the app sends the barcode number to the public <a href="https://world.openfoodfacts.org/">Open Food Facts</a> database to fetch the product's name, brand and nutrition values. The request contains the barcode number and the app's name and version (its "user agent"); like any internet request, the server also sees your device's IP address. Nothing about you or your logs is sent. This only happens when you actively scan, and if the lookup fails you can enter the food manually. Open Food Facts is run by a non-profit that is not connected to the developer; see <a href="https://world.openfoodfacts.org/privacy">their privacy policy</a>.</p>
+
+  <h3>2. Barcode recognition (Google ML Kit)</h3>
+  <p>Barcodes are recognised on the device by Google's ML Kit barcode-scanning library. Camera images are processed locally and are never uploaded or stored. Google states that the library sends it anonymous diagnostics and usage statistics over an encrypted connection: device information (manufacturer, model, OS version), the app's package name and version, a per-installation identifier that Google says is not intended to identify a user or device, performance metrics, event types and error codes. Google says it does not pass this data to third parties. Details are in <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's ML Kit data disclosure</a>. This library only runs while the barcode scanner screen is open.</p>
+
+  <h3>3. Optional AI routine generation (bring your own key)</h3>
+  <p>EchoRoutine can turn a typed description of your week into a routine, in two ways:</p>
   <ul>
-    <li><strong>Copy a prompt, paste the AI's reply back</strong> — the app shows you a prompt template to copy into any AI chat app or website you already use (e.g. Claude, ChatGPT, Gemini); you paste its JSON reply back into EchoRoutine to build your routine. The app itself sends nothing anywhere for this option.</li>
-    <li><strong>Connect your own API key</strong> — if you optionally enter your own API key for an AI provider in Settings, the app will send your typed/spoken routine description directly to that provider's API, using your key, to get the routine JSON back automatically. Your API key is stored only on your device and is sent only to the provider it belongs to, over HTTPS — never to the developer. Requests made this way are governed by that provider's own privacy policy, not this one. You can remove a connected key at any time in Settings, which stops this feature until you add one again.</li>
+    <li><strong>Copy a prompt, paste the reply.</strong> The app shows you a prompt to copy into any AI chat app or website you already use, and you paste the reply back. The app itself sends nothing anywhere for this option.</li>
+    <li><strong>Connect your own API key.</strong> If you enter an API key for Anthropic (Claude), OpenAI (ChatGPT) or Google (Gemini) in Settings, the app sends the description you typed, together with the app's instructions and your key, directly to that provider's API over HTTPS. Your key is stored only on your device and is sent only to the provider it belongs to — never to the developer. Those requests are governed by the provider's own policy: <a href="https://www.anthropic.com/privacy">Anthropic</a>, <a href="https://openai.com/policies/privacy-policy">OpenAI</a>, <a href="https://policies.google.com/privacy">Google</a>. You can change or remove the key at any time in Settings, which stops this feature until you add one again.</li>
   </ul>
 
-  <h2>Export / Import</h2>
-  <p>The app includes an optional, user-initiated export feature that saves your data as a JSON file to your device's storage (for backup, or to move data to a new phone) and an import feature to load such a file back in. This file is created and read only at your explicit request and is never automatically uploaded anywhere.</p>
-
-  <h2>Permissions the app requests, and why</h2>
+  <h3>4. Backups you set up</h3>
   <ul>
-    <li><strong>Camera</strong> — used only while the barcode scanner screen is open, to read food barcodes. The app does not take or store photos.</li>
-    <li><strong>Notifications</strong> — used to announce workout/schedule cues (e.g. "drink water", "rest period over") if the app is in the background.</li>
-    <li><strong>Wake lock / foreground service</strong> — keeps timers and voice cues accurate while the screen is off during a workout or scheduled routine.</li>
-    <li><strong>Vibration</strong> — used for cue feedback alongside sound.</li>
+    <li><strong>Export and import.</strong> You can export your data as a JSON file to a location you choose and import such a file later. Files are created and read only when you ask.</li>
+    <li><strong>Automatic backup.</strong> If you pick a backup folder in Settings, the app writes a dated backup file there about once a day and keeps the newest ten. If the folder you pick is synced by another app (for example a cloud-drive folder), that app's terms apply to the copies it makes. You can turn this off or change the folder at any time.</li>
+    <li><strong>Android device backup.</strong> Android's own backup service may include EchoRoutine's data in your device backup to your Google account, encrypted, as it does for other apps. You control this in your phone's Settings under Google &rsaquo; Backup.</li>
   </ul>
+
+  <h2>Purchases</h2>
+  <p>EchoRoutine is sold through Google Play. Google processes the payment and holds your payment details; the developer never sees them and only receives aggregated sales reporting from Google. Any in-app purchases offered in future would also be processed by Google Play. Google's handling of your purchase is described in <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+
+  <h2>Permissions the app asks for, and why</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th></tr>
+    <tr><td>Camera</td><td>Only while the barcode scanner screen is open, to read food barcodes. No photos are taken or saved.</td></tr>
+    <tr><td>Notifications</td><td>To show the running-timer notification with the next item and a Stop button, and to announce routine, water, food and workout cues.</td></tr>
+    <tr><td>Foreground service and wake lock</td><td>To keep timers and spoken cues accurate while the screen is off. The service runs only while you have started a timer or schedule, and shows a persistent notification.</td></tr>
+    <tr><td>Ignore battery optimisation (optional)</td><td>So Android does not pause the timers overnight. The app only opens the system screen; you decide.</td></tr>
+    <tr><td>Vibration</td><td>Haptic feedback alongside sound cues.</td></tr>
+    <tr><td>Internet</td><td>Only for the barcode lookup, the ML Kit diagnostics and the AI request described above.</td></tr>
+  </table>
 
   <h2>What the app does not do</h2>
   <ul>
-    <li>No user accounts or sign-in</li>
-    <li>No advertising or ad tracking</li>
-    <li>No analytics or usage tracking</li>
-    <li>No data is sold or shared with third parties for marketing purposes</li>
+    <li>No user accounts, sign-in or registration</li>
+    <li>No advertising, advertising identifiers or ad tracking</li>
+    <li>No analytics or usage tracking by the developer (the only diagnostics are the ML Kit ones described above)</li>
+    <li>No selling of data and no sharing for marketing purposes</li>
+    <li>No access to your contacts, location, microphone, call logs or files beyond the backup locations you pick</li>
   </ul>
 
-  <h2>Children's privacy</h2>
-  <p>This app is not directed at children and is not intended for use by children.</p>
+  <h2 id="choices">Your choices and deleting data</h2>
+  <ul>
+    <li>Delete individual routines, entries or logs inside the app at any time.</li>
+    <li><strong>Settings &rsaquo; Reset all app data</strong> wipes everything the app has stored on the device, including any API key.</li>
+    <li>Uninstalling the app removes its private storage. Backup files you exported stay where you put them until you delete them.</li>
+    <li>Because the developer never receives your data, there is nothing held on the developer's side to access, correct or delete. If you have a question about data held by Google (Play purchases, ML Kit diagnostics, Android backup) or by an AI provider you connected, their policies above explain how to contact them.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children and is not intended for use by anyone under 13. It does not knowingly collect data from children.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If this policy changes, the updated version will be posted at this same location with a new effective date.</p>
+  <p>If the app's data practices change, the updated policy will be posted at this address with a new effective date, and the in-app "About" section links here.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy: <a href="mailto:darkskys106@gmail.com">darkskys106@gmail.com</a></p>
+  <p>Questions about this policy or the app: <a href="mailto:darkskys106@gmail.com">darkskys106@gmail.com</a>, or open an issue at <a href="https://github.com/darkskys106/echoroutine-privacy-policy/issues">github.com/darkskys106/echoroutine-privacy-policy/issues</a>.</p>
 
-  <footer>EchoRoutine — Privacy Policy</footer>
+  <footer>EchoRoutine — Privacy Policy &middot; <a href="https://darkskys106.github.io/echoroutine-privacy-policy/">darkskys106.github.io/echoroutine-privacy-policy</a></footer>
 </div>
 </body>
 </html>
